@@ -1,4 +1,7 @@
-from ..import db, flask_bcrupt
+from .. import db
+from flask_bcrypt import Bcrypt
+
+flask_bcrypt = Bcrypt()
 
 class User(db.Model):
     """ User Model for storing user related details """
