@@ -30,4 +30,5 @@ class LogoutAPI(Resource):
     def post(self):
         # get auth token
         auth_header = request.headers.get('Authorization')
+        #print("auth header :",auth_header)
         return Auth.logout_user(data=auth_header)
